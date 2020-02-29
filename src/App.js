@@ -6,6 +6,7 @@ import Home from "./routes/home";
 import Login from "./routes/login";
 import SignUp from "./routes/signup";
 import About from "./routes/about";
+import ContactUs from "./routes/contactUs";
 import Profile from "./routes/profile";
 //Algorithms
 import { UserContext } from "./user.context";
@@ -62,6 +63,11 @@ const App = () => {
               path="/home"
               component={props => <Home {...props} />}
             />
+            <Route
+              exact
+              path="/contact-us"
+              component={props => <ContactUs {...props} />}
+            />
 
             <Route
               path="/signup"
@@ -80,7 +86,7 @@ const App = () => {
             />
             <Route path="/about" component={props => <About {...props} />} />
           </UserContext.Provider>
-          <Route path="*" component={() => "404 NOT FOUND!"} />
+          <Route path="*" render={() => "404 NOT FOUND!"} />
         </Switch>
       </Router>
     </div>

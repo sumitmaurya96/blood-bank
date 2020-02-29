@@ -108,7 +108,7 @@ const Login = props => {
           Submit
         </button>
         <p className="forgot-password text-right">
-          Forgot <a href="http://localhost:3000/login">password?</a>
+          Forgot <a href="http://localhost:3000/login">Password?</a>
         </p>
         <p className="forgot-password text-right">
           Don't have an account?{" "}

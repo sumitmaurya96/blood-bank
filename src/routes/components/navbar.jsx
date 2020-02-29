@@ -11,7 +11,10 @@ const Navbar = props => {
 
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: "#ff8080"}}> 
+      <nav
+        className="navbar navbar-expand-lg navbar-light"
+        style={{ backgroundColor: "#ff8080" }}
+      >
         <a className="navbar-brand" href="http://localhost:3000/home">
           <img
             src={blood}
@@ -65,8 +68,8 @@ const Navbar = props => {
             <li>
               <a
                 className="nav-link"
-                onClick={() => getActiveClass("about")}
-                href="http://localhost:3000/about"
+                onClick={() => getActiveClass("contactUs")}
+                href="http://localhost:3000/contact-us"
               >
                 CONTACT US
               </a>
