@@ -1,9 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-<<<<<<< HEAD
-import "bootstrap/dist/css/bootstrap.min.css";
-=======
->>>>>>> 05f8f8f373f0c3ee2673846825b0685996470def
 import { SocialMediaIconsReact } from "social-media-icons-react";
 
 const FooterPage = () => {
@@ -60,7 +56,6 @@ const FooterPage = () => {
             >
               Connect
             </h5>
-<<<<<<< HEAD
             <div style={{ marginTop: "20px" }}>
               <SocialMediaIconsReact
                 icon="facebook"
@@ -77,37 +72,14 @@ const FooterPage = () => {
                 url="https://linkedin.com/your-linkedin-handle"
               />
             </div>
-=======
-            <div style={{marginTop: "20px"}}>
-              <SocialMediaIconsReact
-              icon="facebook"
-              url="https://facebook.com/your-facebook-handle"
-            />
-            &nbsp; &nbsp;
-            <SocialMediaIconsReact
-              icon="twitter"
-              url="https://twitter.com/your-twitter-handle"
-            />
-            &nbsp; &nbsp;
-            <SocialMediaIconsReact
-              icon="linkedin"
-              url="https://linkedin.com/your-linkedin-handle"
-            />
-            </div>
-            
->>>>>>> 05f8f8f373f0c3ee2673846825b0685996470def
           </div>
         </div>
       </div>
 
-<<<<<<< HEAD
       <div
         className="footer-copyright text-center py-3"
         style={{ color: "white" }}
       >
-=======
-      <div className="footer-copyright text-center py-3" style={{color: "white"}}>
->>>>>>> 05f8f8f373f0c3ee2673846825b0685996470def
         © 2020 Copyright:
         <a href="https://localhost:3000/home"> Bloodbank.org</a>
       </div>

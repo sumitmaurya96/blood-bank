@@ -6,13 +6,8 @@ import axios from "axios";
 import RequestPopup from "./components/requestPopup";
 import auth from "../algorithms/auth";
 import blood from "./../media/blood-transfusion.svg";
-<<<<<<< HEAD
 import threeGenerations from "./../media/three-generations.png";
 import bloodDisease from "./../media/blood-disease.png";
-=======
-import threeGenerations from "./../media/three-generations.jpg";
-import bloodDisease from "./../media/blood-disease.jpg";
->>>>>>> 05f8f8f373f0c3ee2673846825b0685996470def
 import bloodPressure from "./../media/blood-pressure.svg";
 
 const Home = props => {
