@@ -3,11 +3,7 @@ import Navbar from "./components/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import auth from "../algorithms/auth";
 import { UserContext } from "../user.context";
-
-const styleCSS = {
-  margin: "0px auto",
-  width: "30%"
-};
+import Footer from "./components/footer";
 
 const Login = props => {
   const [user, setUser] = useState([
@@ -44,8 +40,9 @@ const Login = props => {
   return (
     <React.Fragment>
       <Navbar isLogedIn={user.authenticated} />
-      <form style={styleCSS}>
-        <h3>Sign In</h3>
+
+      <form style={{ margin: "90px auto", width: "30%" }}>
+        <h3>Log In</h3>
 
         <div className="form-group">
           <label>Email address</label>
@@ -92,7 +89,8 @@ const Login = props => {
 
         <button
           type="submit"
-          className="btn btn-primary btn-block"
+          style={{ backgroundColor: "#650101", color: "#F0F0F2" }}
+          className="btn btn-block"
           onClick={async event => {
             event.preventDefault();
             if (await props.onSubmit("login", userData, props)) {
@@ -112,9 +110,10 @@ const Login = props => {
         </p>
         <p className="forgot-password text-right">
           Don't have an account?{" "}
-          <a href="http://localhost:3000/signup">Sing Up</a>
+          <a href="http://localhost:3000/signup">Sign Up</a>
         </p>
       </form>
+      <Footer />
     </React.Fragment>
   );
 };

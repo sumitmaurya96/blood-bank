@@ -21,7 +21,7 @@ class About extends Component {
           <b>The Team.</b>
         </h1>
 
-        <Container style={{ marginBottom: "20px" }}>
+        <Container style={{ marginBottom: "60px" }}>
           <Row>
             <Col>
               <Card style={{ width: "15rem" }}>

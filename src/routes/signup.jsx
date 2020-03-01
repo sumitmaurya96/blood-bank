@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/footer";
 
 const SignUp = props => {
   const userData = {
@@ -30,7 +31,7 @@ const SignUp = props => {
       <Navbar isLogedIn={props.isLogedIn} />
       <form
         style={{
-          margin: "0px auto",
+          margin: "50px auto",
           width: "30%"
         }}
       >
@@ -85,7 +86,8 @@ const SignUp = props => {
         </div>
 
         <button
-          className="btn btn-primary btn-block"
+          style={{ backgroundColor: "#650101", color: "#F0F0F2" }}
+          className="btn btn-block"
           onClick={event => {
             event.preventDefault();
             props.onSubmit("signup", userData, props);
@@ -97,6 +99,7 @@ const SignUp = props => {
           Already registered <a href="http://localhost:3000/login">sign in?</a>
         </p>
       </form>
+      <Footer />
     </React.Fragment>
   );
 };
