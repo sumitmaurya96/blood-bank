@@ -18,10 +18,10 @@ const FooterPage = () => {
               College- Jadavpur University
             </h5>
             <h6 className="text-uppercase" style={{ color: "#bfbfbf" }}>
-              ESumm it-2020
+              Hack-n-pitch
             </h6>
             <h6 className="text-uppercase" style={{ color: "#bfbfbf" }}>
-              Team ID- Squad4
+              ESummit-2020
             </h6>
           </div>
 
@@ -77,7 +77,7 @@ const FooterPage = () => {
         </div>
       </div>
 
-      <div className="footer-copyright text-center py-3">
+      <div className="footer-copyright text-center py-3" style={{color: "white"}}>
         © 2020 Copyright:
         <a href="https://localhost:3000/home"> Bloodbank.org</a>
       </div>

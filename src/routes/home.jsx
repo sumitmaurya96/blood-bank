@@ -4,7 +4,7 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import axios from "axios";
 import auth from "../algorithms/auth";
-import blood from "./../media/blood.svg";
+import blood from "./../media/blood-transfusion.svg";
 import threeGenerations from "./../media/three-generations.jpg";
 import bloodDisease from "./../media/blood-disease.jpg";
 import bloodPressure from "./../media/blood-pressure.svg";

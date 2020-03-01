@@ -18,7 +18,7 @@ class About extends Component {
       <React.Fragment>
         <Navbar isLogedIn={this.props.authenticated} />
         <h1 style={{ padding: "10px", margin: "10px", textAlign: "center" }}>
-          <b>The Team.</b>
+          <b>Developer's Team.</b>
         </h1>
 
         <Container style={{ marginBottom: "20px" }}>

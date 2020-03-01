@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import login from "../../media/login.svg";
-import blood from "../../media/blood.svg";
+import blood from "../../media/blood-transfusion.svg";
 
 const Navbar = props => {
   let aboutActive, homeActive, profileActive, loginActive;
