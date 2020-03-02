@@ -5,7 +5,7 @@ import { SocialMediaIconsReact } from "social-media-icons-react";
 const FooterPage = () => {
   return (
     <footer
-      className="page-footer font-small blue pt-2"
+      className="page-footer font-small pt-2"
       style={{ backgroundColor: "#660000" }}
     >
       <div className="container-fluid text-center text-md-left">
@@ -37,14 +37,10 @@ const FooterPage = () => {
 
             <ul className="list-unstyled">
               <li>
-                <a href="#!" style={{ color: "#bfbfbf" }}>
-                  Our Team
-                </a>
+                <a href="#!">Our Team</a>
               </li>
               <li>
-                <a href="#!" style={{ color: "#bfbfbf" }}>
-                  How to use
-                </a>
+                <a href="#!">How to use</a>
               </li>
             </ul>
           </div>
@@ -81,7 +77,7 @@ const FooterPage = () => {
         style={{ color: "white" }}
       >
         © 2020 Copyright:
-        <a href="https://localhost:3000/home"> Bloodbank.org</a>
+        <a href="https://localhost:3000/home"> example.org</a>
       </div>
     </footer>
   );

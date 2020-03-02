@@ -39,7 +39,7 @@ const Login = props => {
 
   return (
     <React.Fragment>
-      <Navbar isLogedIn={user.authenticated} />
+      <Navbar {...props} />
 
       <form style={{ margin: "90px auto", width: "30%" }}>
         <h3>Log In</h3>
@@ -106,11 +106,26 @@ const Login = props => {
           Submit
         </button>
         <p className="forgot-password text-right">
-          Forgot <a href="http://localhost:3000/login">Password?</a>
+          Forgot{" "}
+          <a
+            href="#"
+            onClick={() => {
+              props.history.push("/forgot-password");
+            }}
+          >
+            Password?
+          </a>
         </p>
         <p className="forgot-password text-right">
           Don't have an account?{" "}
-          <a href="http://localhost:3000/signup">Sign Up</a>
+          <a
+            href="#"
+            onClick={() => {
+              props.history.push("/signup");
+            }}
+          >
+            Sign Up
+          </a>
         </p>
       </form>
       <Footer />

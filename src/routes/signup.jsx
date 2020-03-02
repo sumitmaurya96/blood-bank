@@ -28,7 +28,7 @@ const SignUp = props => {
 
   return (
     <React.Fragment>
-      <Navbar isLogedIn={props.isLogedIn} />
+      <Navbar {...props} />
       <form
         style={{
           margin: "50px auto",
@@ -96,7 +96,15 @@ const SignUp = props => {
           Sign Up
         </button>
         <p className="forgot-password text-right">
-          Already registered <a href="http://localhost:3000/login">sign in?</a>
+          Already registered{" "}
+          <a
+            href="#"
+            onClick={() => {
+              props.history.push("/login");
+            }}
+          >
+            Log in?
+          </a>
         </p>
       </form>
       <Footer />

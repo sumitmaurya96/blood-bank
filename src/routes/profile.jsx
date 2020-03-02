@@ -19,7 +19,7 @@ const Profile = props => {
 
   return (
     <React.Fragment>
-      <Navbar isLogedIn={user.authenticated} />
+      <Navbar {...props} />
       {!auth.isAuthenticated() ? (
         <img src={Loader} width="100px" height="100px" alt="Page Loading" />
       ) : (

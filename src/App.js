@@ -13,7 +13,7 @@ import Request from "./routes/request";
 import { UserContext } from "./user.context";
 import auth from "./algorithms/auth";
 
-const App = () => {
+const App = props => {
   const [user, setUser] = React.useState({
     firstname: "firstname",
     lastname: "lastname",
@@ -71,7 +71,7 @@ const App = () => {
             />
             <Route
               exact
-              path="/contact-us"
+              path="/contact"
               component={props => <ContactUs {...props} />}
             />
 

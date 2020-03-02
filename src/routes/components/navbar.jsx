@@ -1,12 +1,21 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import login from "../../media/login.svg";
+import profile from "../../media/profile.svg";
+import login from "../../media/log-in.svg";
 import blood from "../../media/blood-transfusion.svg";
+import { useState } from "react";
 
 const Navbar = props => {
-  let aboutActive, homeActive, profileActive, loginActive;
-  const getActiveClass = tag => {
-    console.log("fashfihewaiugfbewgbfsgbui");
+  let active = props.location.pathname.replace("/", "").replace("#", "");
+
+  const [navbar, setNavbar] = useState({
+    toggler: "collapse",
+    authenticated: false
+  });
+
+  const navbarToggler = () => {
+    const toggler = navbar.toggler === "collapse" ? "" : "collapse";
+    setNavbar({ toggler });
   };
 
   return (
@@ -15,7 +24,13 @@ const Navbar = props => {
         className="navbar navbar-expand-lg navbar-light"
         style={{ backgroundColor: "#ff8080" }}
       >
-        <a className="navbar-brand" href="http://localhost:3000/home">
+        <a
+          className="navbar-brand"
+          href="#"
+          onClick={() => {
+            props.history.push("/home");
+          }}
+        >
           <img
             src={blood}
             alt="Blood Bank"
@@ -32,72 +47,104 @@ const Navbar = props => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => {
+            navbarToggler();
+          }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          className={`navbar-collapse ${navbar.toggler}`}
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav mr-auto">
-            <li className={`nav-item ${homeActive}`}>
+            <li className={`nav-item ${active === "home" ? "active" : ""}`}>
               <a
                 className="nav-link"
-                onClick={() => getActiveClass("home")}
-                href="http://localhost:3000/home"
+                onClick={() => {
+                  props.history.push("/home");
+                }}
+                href="#"
               >
                 HOME <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li className={`nav-item ${loginActive}`}>
+            <li className={`nav-item ${active === "request" ? "active" : ""}`}>
               <a
                 className="nav-link"
-                onClick={() => getActiveClass("login")}
-                href="http://localhost:3000/request"
+                onClick={() => {
+                  //navbar.active = "request";
+                  props.history.push("/request");
+                }}
+                href="#"
               >
                 REQUESTS
               </a>
             </li>
-            <li className={`nav-item ${aboutActive}`}>
+            <li className={`nav-item ${active === "about" ? "active" : ""}`}>
               <a
                 className="nav-link"
-                onClick={() => getActiveClass("about")}
-                href="http://localhost:3000/about"
+                onClick={() => {
+                  //navbar.active = "about";
+                  props.history.push("/about");
+                }}
+                href="#"
               >
                 ABOUT
               </a>
             </li>
-            <li>
+            <li className={`nav-item ${active === "contact" ? "active" : ""}`}>
               <a
                 className="nav-link"
-                onClick={() => getActiveClass("contactUs")}
-                href="http://localhost:3000/contact-us"
+                onClick={() => {
+                  //navbar.active = "contact";
+                  props.history.push("/contact");
+                }}
+                href="#"
               >
-                CONTACT US
+                CONTACT
               </a>
             </li>
           </ul>
-          <div className="form-inline my-2 my-lg-0">
-            {props.isLogedIn === true && (
+          <form className="form-inline my-1 my-lg-0 ml-n3 nav-item active">
+            {navbar.authenticated && (
               <input
                 className="nav-link"
                 type="image"
-                src={login}
-                alt="LOGIN"
+                role="button"
+                src={profile}
+                alt="PROFILE"
                 width="60"
                 height="60"
-                onClick={() => getActiveClass("profile")}
-                href="http://localhost:3000/login"
+                href="#"
+                onClick={() => {
+                  //navbar.active = "profile";
+                  props.history.push("/profile");
+                }}
               ></input>
             )}
-            {!props.isLogedIn === true && (
+            {!navbar.authenticated && (
               <a
-                className="nav-link text-light"
-                onClick={() => getActiveClass("login")}
-                href="http://localhost:3000/profile"
+                className="nav-link"
+                onClick={() => {
+                  active = "login";
+                  props.history.push("/login");
+                }}
+                href="#"
               >
-                LOGIN
+                <span className="btn btn-outline-success">
+                  <img
+                    src={login}
+                    className="mr-1"
+                    width="15px"
+                    height="15px"
+                  />
+                  LOGIN
+                </span>
               </a>
             )}
-          </div>
+          </form>
         </div>
       </nav>
     </React.Fragment>

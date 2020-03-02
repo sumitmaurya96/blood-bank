@@ -16,126 +16,113 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar isLogedIn={this.props.authenticated} />
-        <h1 style={{ padding: "10px", margin: "10px", textAlign: "center" }}>
-          <b>Developer's Team.</b>
-        </h1>
+        <Navbar {...this.props} />
+        <div className="pb-5 pt-4" style={{ backgroundColor: "#FFB3B3" }}>
+          <p className="pb-3 h1 bold text-center">Developer's Team</p>
+          <Container>
+            <Row>
+              <Col>
+                <Card className="m-4 mx-auto" style={{ width: "15rem" }}>
+                  <Card.Img variant="top" src={Sumit} />
+                  <Card.Body>
+                    <Card.Title className="text-muted text-center">
+                      Sumit Kumar
+                    </Card.Title>
+                    <Card.Text className="text-center">
+                      <SocialIcon
+                        className="m-1"
+                        url="https://www.linkedin.com/in/aniket-k-224901112"
+                      />
+                      <SocialIcon
+                        className="m-1"
+                        url="https://www.facebook.com/profile.php?id=100017847277255"
+                      />
+                      <SocialIcon
+                        className="m-1"
+                        url="https://github.com/aniket-28sep"
+                      />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
 
-        <Container style={{ marginBottom: "60px" }}>
-          <Row>
-            <Col>
-              <Card style={{ width: "15rem" }}>
-                <Card.Img variant="top" src={Sumit} />
-                <Card.Body>
-                  <Card.Title
-                    className="text-muted"
-                    style={{ textAlign: "center" }}
-                  >
-                    Sumit Kumar
-                  </Card.Title>
-                  <Card.Text style={{ textAlign: "center" }}>
-                    <SocialIcon
-                      style={{ margin: "3px" }}
-                      url="https://www.linkedin.com/in/aniket-k-224901112"
-                    />
-                    <SocialIcon
-                      style={{ margin: "3px" }}
-                      url="https://www.facebook.com/profile.php?id=100017847277255"
-                    />
-                    <SocialIcon
-                      style={{ margin: "3px" }}
-                      url="https://github.com/aniket-28sep"
-                    />
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+              <Col>
+                <Card className="m-4 mx-auto" style={{ width: "15rem" }}>
+                  <Card.Img variant="top" src={Aniket} />
+                  <Card.Body>
+                    <Card.Title className="text-muted text-center">
+                      Aniket Kumar
+                    </Card.Title>
+                    <Card.Text className="text-center">
+                      <SocialIcon
+                        className="m-1"
+                        url="https://www.linkedin.com/in/aniket-k-224901112"
+                      />
+                      <SocialIcon
+                        className="m-1"
+                        url="https://www.facebook.com/profile.php?id=100017847277255"
+                      />
+                      <SocialIcon
+                        className="m-1"
+                        url="https://github.com/aniket-28sep"
+                      />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
 
-            <Col>
-              <Card style={{ width: "15rem" }}>
-                <Card.Img variant="top" src={Aniket} />
-                <Card.Body>
-                  <Card.Title
-                    className="text-muted"
-                    style={{ textAlign: "center" }}
-                  >
-                    Aniket Kumar
-                  </Card.Title>
-                  <Card.Text style={{ textAlign: "center" }}>
-                    <SocialIcon
-                      style={{ margin: "3px" }}
-                      url="https://www.linkedin.com/in/aniket-k-224901112"
-                    />
-                    <SocialIcon
-                      style={{ margin: "3px" }}
-                      url="https://www.facebook.com/profile.php?id=100017847277255"
-                    />
-                    <SocialIcon
-                      style={{ margin: "3px" }}
-                      url="https://github.com/aniket-28sep"
-                    />
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+              <Col>
+                <Card className="m-4 mx-auto" style={{ width: "15rem" }}>
+                  <Card.Img variant="top" src={Amarnath} />
+                  <Card.Body>
+                    <Card.Title className="text-muted text-center">
+                      Amarnath Bhakt
+                    </Card.Title>
+                    <Card.Text className="text-center">
+                      <SocialIcon
+                        className="m-1"
+                        url="https://www.linkedin.com/in/sourav-prasad-414562151/"
+                      />
+                      <SocialIcon
+                        className="m-1"
+                        url="https://www.facebook.com/saurav.prasad.5"
+                      />
+                      <SocialIcon
+                        className="m-1"
+                        url="https://github.com/sourav731"
+                      />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
 
-            <Col>
-              <Card style={{ width: "15rem" }}>
-                <Card.Img variant="top" src={Amarnath} />
-                <Card.Body>
-                  <Card.Title
-                    className="text-muted"
-                    style={{ textAlign: "center" }}
-                  >
-                    Amarnath Bhakt
-                  </Card.Title>
-                  <Card.Text style={{ textAlign: "center" }}>
-                    <SocialIcon
-                      style={{ margin: "3px" }}
-                      url="https://www.linkedin.com/in/sourav-prasad-414562151/"
-                    />
-                    <SocialIcon
-                      style={{ margin: "3px" }}
-                      url="https://www.facebook.com/saurav.prasad.5"
-                    />
-                    <SocialIcon
-                      style={{ margin: "3px" }}
-                      url="https://github.com/sourav731"
-                    />
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col>
-              <Card style={{ width: "15rem" }}>
-                <Card.Img variant="top" src={Nishant} />
-                <Card.Body>
-                  <Card.Title
-                    className="text-muted"
-                    style={{ textAlign: "center" }}
-                  >
-                    Nishant Raj
-                  </Card.Title>
-                  <Card.Text style={{ textAlign: "center" }}>
-                    <SocialIcon
-                      style={{ margin: "3px" }}
-                      url="https://www.linkedin.com/in/nishant-raj-1776b0165/"
-                    />
-                    <SocialIcon
-                      style={{ margin: "3px" }}
-                      url="https://www.facebook.com/nishant.singhraj.1"
-                    />
-                    <SocialIcon
-                      style={{ margin: "3px" }}
-                      url="https://github.com/nish-976"
-                    />
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
+              <Col>
+                <Card className="m-4 mx-auto" style={{ width: "15rem" }}>
+                  <Card.Img variant="top" src={Nishant} />
+                  <Card.Body>
+                    <Card.Title className="text-muted text-center">
+                      Nishant Raj
+                    </Card.Title>
+                    <Card.Text className="text-center">
+                      <SocialIcon
+                        className="m-1"
+                        url="https://www.linkedin.com/in/nishant-raj-1776b0165/"
+                      />
+                      <SocialIcon
+                        className="m-1"
+                        url="https://www.facebook.com/nishant.singhraj.1"
+                      />
+                      <SocialIcon
+                        className="m-1"
+                        url="https://github.com/nish-976"
+                      />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </div>
         <Footer />
       </React.Fragment>
     );

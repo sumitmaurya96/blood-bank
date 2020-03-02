@@ -4,29 +4,29 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import axios from "axios";
 import RequestPopup from "./components/requestPopup";
-import auth from "../algorithms/auth";
 import blood from "./../media/blood-transfusion.svg";
 import threeGenerations from "./../media/three-generations.png";
 import bloodDisease from "./../media/blood-disease.png";
 import bloodPressure from "./../media/blood-pressure.svg";
 
 const Home = props => {
-  const [hospital, setHospital] = useState([]);
-
   (() => {
-    axios.get(`http://localhost:5000/hospital`).then(res => {
-      setHospital([...res.data]);
-    });
+    axios.get(`http://localhost:5000/hospital`).then(res => {});
   })();
 
   return (
     <React.Fragment>
-      <Navbar isLogedIn={auth.isAuthenticated()} />
-      <div className="row" width="100%" style={{ backgroundColor: "#660000" }}>
-        <div
-          className="col-md-1"
-          style={{ float: "left", marginTop: "30px", marginLeft: "10px" }}
-        >
+      <Navbar {...props} />
+
+      <div
+        className="row p-4"
+        style={{
+          backgroundColor: "#660000",
+          marginLeft: "0px",
+          marginRight: "0px"
+        }}
+      >
+        <div className="col-md-1">
           <img
             src={blood}
             alt="Blood Bank"
@@ -35,83 +35,61 @@ const Home = props => {
             height="65"
           />
         </div>
-        <div className="col-md-3 " style={{ float: "left" }}>
-          <h1 className="text-white" style={{ marginTop: "34px" }}>
-            BLOOD BANK
-          </h1>
-          <p className="text-white" style={{ marginLeft: "50px" }}>
+        <div className="col-md-4 mt-1">
+          <p className="text-white h1 text-light">BLOOD BANK</p>
+          <p className="text-muted offset-md-1">
             Every blood donar is a life saver
           </p>
         </div>
-        <div style={{ marginLeft: "700px", marginTop: "30px" }}>
-          <div className="row">
-            <RequestPopup />
-            {/* <button
-              className="btn-lg m-2"
-              style={{
-                backgroundColor: "#ff8080",
-                border: "3px solid #f7e6e6"
-              }}
-            >
-              REQUEST NOW
-            </button> */}
-          </div>
+        <div className="mt-3 offset-md-5">
+          <RequestPopup />
         </div>
       </div>
-      <div style={{ padding: "10px", backgroundColor: "#ffb3b3" }}>
-        <h4 className="text-danger">Who can give blood?</h4>
-        <div className="row" style={{ width: "90%", margin: "5px auto" }}>
-          <div style={{ margin: "5px" }}>
-            <div style={{ float: "left", margin: "20px" }}>
-              <img
-                src={threeGenerations}
-                alt="family"
-                style={{ width: "100px", height: "100px" }}
-              />
-            </div>
-            <div style={{ float: "left", margin: "20px" }}>
-              <h4 style={{ marginTop: "20px" }}>
-                Must be within the age group of 18-60.
-              </h4>
-            </div>
-          </div>
-          <div style={{ float: "clear" }}></div>
+
+      <div
+        className="p-4"
+        style={{
+          backgroundColor: "#ffb3b3",
+          marginLeft: "0px",
+          marginRight: "0px"
+        }}
+      >
+        <div className="row m-2">
+          <p className="text-danger h4 ">Who can give blood?</p>
         </div>
-        <div className="row" style={{ width: "90%", margin: "5px auto" }}>
-          <div style={{ margin: "5px" }}>
-            <div style={{ float: "left", margin: "20px" }}>
-              <img
-                src={bloodPressure}
-                alt="family"
-                style={{ width: "100px", height: "100px" }}
-              />
-            </div>
-            <div style={{ float: "left", margin: "20px" }}>
-              <h4 style={{ marginTop: "20px" }}>
-                Have a blood pressure in range of 160/90 to 110/40.
-              </h4>
-            </div>
-          </div>
-          <div style={{ float: "clear" }}></div>
+        <div className="row my-2">
+          <img
+            className="mx-4"
+            src={threeGenerations}
+            alt="family"
+            style={{ width: "100px", height: "100px" }}
+          />
+          <p className="h4 mt-5">Must be within the age group of 18-60.</p>
         </div>
-        <div className="row" style={{ width: "90%", margin: "5px auto" }}>
-          <div style={{ margin: "5px" }}>
-            <div style={{ float: "left", margin: "20px" }}>
-              <img
-                src={bloodDisease}
-                alt="family"
-                style={{ width: "100px", height: "100px" }}
-              />
-            </div>
-            <div style={{ float: "left", margin: "20px" }}>
-              <h4 style={{ marginTop: "20px" }}>
-                No disease that can be tranmitted by blood transfusion.
-              </h4>
-            </div>
-          </div>
-          <div style={{ float: "clear" }}></div>
+        <div className="row my-2">
+          <img
+            className="mx-4"
+            src={bloodPressure}
+            alt="family"
+            style={{ width: "100px", height: "100px" }}
+          />
+          <p className="h4 mt-5">
+            Have a blood pressure in range of 160/90 to 110/40.
+          </p>
+        </div>
+        <div className="row my-2">
+          <img
+            className="mx-4"
+            src={bloodDisease}
+            alt="family"
+            style={{ width: "100px", height: "100px" }}
+          />
+          <p className="h4 mt-5">
+            No disease that can be tranmitted by blood transfusion.
+          </p>
         </div>
       </div>
+
       <Footer />
     </React.Fragment>
   );
