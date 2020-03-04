@@ -28,13 +28,13 @@ const List = props => {
                 <a
                   href="#"
                   className="list-group-item list-group-item-action my-2"
-                  style={{ backgroundColor: "cyan" }}
+                  style={{ backgroundColor: "#ff8080" }}
                 >
                   Cras justo odio
                 </a>
                 <a
                   href="#"
-                  style={{ backgroundColor: "cyan" }}
+                  style={{ backgroundColor: "#ff8080" }}
                   className="list-group-item list-group-item-action my-2"
                 >
                   Dapibus ac facilisis in
@@ -49,15 +49,15 @@ const List = props => {
               <div className="list-group">
                 <a
                   href="#"
-                  style={{ backgroundColor: "cyan" }}
-                  className="list-group-item list-group-item-action my-2"
+                  style={{ backgroundColor: "#c11758" }}
+                  className="list-group-item list-group-item-action my-2 text-light"
                 >
                   Cras justo odio
                 </a>
                 <a
                   href="#"
-                  style={{ backgroundColor: "cyan" }}
-                  className="list-group-item list-group-item-action my-2"
+                  style={{ backgroundColor: "#c11758" }}
+                  className="list-group-item list-group-item-action my-2 text-light"
                 >
                   Dapibus ac facilisis in
                 </a>

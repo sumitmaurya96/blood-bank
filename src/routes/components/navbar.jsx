@@ -74,7 +74,6 @@ const Navbar = props => {
               <a
                 className="nav-link"
                 onClick={() => {
-                  //navbar.active = "request";
                   props.history.push("/request");
                 }}
                 href="#"
