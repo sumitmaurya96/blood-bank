@@ -19,12 +19,75 @@ const List = props => {
     <React.Fragment>
       {request.length !== 0 && (
         <div className="p-4">
-          <div className="rounded border border-dark">
-            <div className="p-4">
+          <div className="rounded border border-dark row">
+            <div className="p-4 col-md-6">
               <h1>
                 <span className="badge badge-danger">Your doners</span>
               </h1>
-              <div className="list-group">
+              <div
+                className="list-group rounded border border-dark p-3 scroll-Y"
+                style={{
+                  overflowY: "scroll",
+                  WebkitOverflowScrolling: "touch",
+                  maxHeight: "65vh"
+                }}
+              >
+                <a
+                  href="#"
+                  className="list-group-item list-group-item-action my-2"
+                  style={{ backgroundColor: "#ff8080" }}
+                >
+                  Cras justo odio
+                </a>
+                <a
+                  href="#"
+                  style={{ backgroundColor: "#ff8080" }}
+                  className="list-group-item list-group-item-action my-2"
+                >
+                  Dapibus ac facilisis in
+                </a>
+                <a
+                  href="#"
+                  className="list-group-item list-group-item-action my-2"
+                  style={{ backgroundColor: "#ff8080" }}
+                >
+                  Cras justo odio
+                </a>
+                <a
+                  href="#"
+                  style={{ backgroundColor: "#ff8080" }}
+                  className="list-group-item list-group-item-action my-2"
+                >
+                  Dapibus ac facilisis in
+                </a>
+                <a
+                  href="#"
+                  className="list-group-item list-group-item-action my-2"
+                  style={{ backgroundColor: "#ff8080" }}
+                >
+                  Cras justo odio
+                </a>
+                <a
+                  href="#"
+                  style={{ backgroundColor: "#ff8080" }}
+                  className="list-group-item list-group-item-action my-2"
+                >
+                  Dapibus ac facilisis in
+                </a>
+                <a
+                  href="#"
+                  className="list-group-item list-group-item-action my-2"
+                  style={{ backgroundColor: "#ff8080" }}
+                >
+                  Cras justo odio
+                </a>
+                <a
+                  href="#"
+                  style={{ backgroundColor: "#ff8080" }}
+                  className="list-group-item list-group-item-action my-2"
+                >
+                  Dapibus ac facilisis in
+                </a>
                 <a
                   href="#"
                   className="list-group-item list-group-item-action my-2"
@@ -42,11 +105,74 @@ const List = props => {
               </div>
             </div>
 
-            <div className="p-4">
+            <div className="p-4 col-md-6">
               <h1>
                 <span className="badge badge-danger">You donating</span>
               </h1>
-              <div className="list-group">
+              <div
+                className="list-group rounded border border-dark p-3"
+                style={{
+                  overflowY: "scroll",
+                  WebkitOverflowScrolling: "touch",
+                  maxHeight: "65vh"
+                }}
+              >
+                <a
+                  href="#"
+                  style={{ backgroundColor: "#c11758" }}
+                  className="list-group-item list-group-item-action my-2 text-light"
+                >
+                  Cras justo odio
+                </a>
+                <a
+                  href="#"
+                  style={{ backgroundColor: "#c11758" }}
+                  className="list-group-item list-group-item-action my-2 text-light"
+                >
+                  Dapibus ac facilisis in
+                </a>
+                <a
+                  href="#"
+                  style={{ backgroundColor: "#c11758" }}
+                  className="list-group-item list-group-item-action my-2 text-light"
+                >
+                  Cras justo odio
+                </a>
+                <a
+                  href="#"
+                  style={{ backgroundColor: "#c11758" }}
+                  className="list-group-item list-group-item-action my-2 text-light"
+                >
+                  Dapibus ac facilisis in
+                </a>
+                <a
+                  href="#"
+                  style={{ backgroundColor: "#c11758" }}
+                  className="list-group-item list-group-item-action my-2 text-light"
+                >
+                  Cras justo odio
+                </a>
+                <a
+                  href="#"
+                  style={{ backgroundColor: "#c11758" }}
+                  className="list-group-item list-group-item-action my-2 text-light"
+                >
+                  Dapibus ac facilisis in
+                </a>
+                <a
+                  href="#"
+                  style={{ backgroundColor: "#c11758" }}
+                  className="list-group-item list-group-item-action my-2 text-light"
+                >
+                  Cras justo odio
+                </a>
+                <a
+                  href="#"
+                  style={{ backgroundColor: "#c11758" }}
+                  className="list-group-item list-group-item-action my-2 text-light"
+                >
+                  Dapibus ac facilisis in
+                </a>
                 <a
                   href="#"
                   style={{ backgroundColor: "#c11758" }}

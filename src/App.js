@@ -85,7 +85,7 @@ const App = props => {
               path="/login"
               component={props => <Login {...props} onSubmit={handleSubmit} />}
             />
-            <ProtectedRoute
+            <Route
               exact
               path="/profile"
               component={props => (
