@@ -52,7 +52,10 @@ const SignUp = props => {
       <form
         className="m-3 mx-auto"
         style={{
-          width: "40%"
+          width: "40%",
+          border: "3px lightcoral solid",
+          borderRadius: "5px",
+          padding: "20px"
         }}
       >
         <h3>Sign Up</h3>
@@ -188,9 +191,7 @@ const SignUp = props => {
             }}
             value="others"
           />
-          <label style={{ paddingLeft: "3px", paddingRight: "50px" }}>
-            Others
-          </label>
+          <label style={{ paddingLeft: "3px" }}>Others</label>
         </div>
 
         <button

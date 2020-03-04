@@ -81,6 +81,19 @@ const Navbar = props => {
                 REQUESTS
               </a>
             </li>
+            <li
+              className={`nav-item ${active === "information" ? "active" : ""}`}
+            >
+              <a
+                className="nav-link"
+                onClick={() => {
+                  props.history.push("/information");
+                }}
+                href="#"
+              >
+                INFORMATION
+              </a>
+            </li>
             <li className={`nav-item ${active === "about" ? "active" : ""}`}>
               <a
                 className="nav-link"
@@ -132,14 +145,14 @@ const Navbar = props => {
                 }}
                 href="#"
               >
-                <span className="btn btn-outline-success">
+                <span className="btn btn-outline-danger">
                   <img
                     src={login}
                     className="mr-1"
                     width="15px"
                     height="15px"
                   />
-                  LOGIN
+                  <span style={{ color: "white" }}>LOGIN</span>
                 </span>
               </a>
             )}

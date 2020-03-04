@@ -43,7 +43,14 @@ const Login = props => {
 
       <form
         className="mx-auto"
-        style={{ marginTop: "85px", marginBottom: "120px ", width: "30%" }}
+        style={{
+          marginTop: "85px",
+          marginBottom: "120px ",
+          width: "30%",
+          border: "3px lightcoral solid",
+          borderRadius: "5px",
+          padding: "20px"
+        }}
       >
         <h3>Log In</h3>
 

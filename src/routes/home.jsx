@@ -37,7 +37,7 @@ const Home = props => {
         </div>
         <div className="col-md-4 mt-1">
           <p className="text-white h1 text-light">BLOOD BANK</p>
-          <p className="text-muted offset-md-1">
+          <p className="text-muted offset-md-1" style={{ fontSize: "20px" }}>
             Every blood donar is a life saver
           </p>
         </div>
@@ -66,6 +66,18 @@ const Home = props => {
           />
           <p className="h4 mt-5">Must be within the age group of 18-60.</p>
         </div>
+
+        <button
+          className="btn-danger btn-lg"
+          style={{
+            borderRadius: "4px",
+            float: "right",
+            marginRight: "350px"
+          }}
+        >
+          Know more
+        </button>
+
         <div className="row my-2">
           <img
             className="mx-4"
@@ -77,6 +89,7 @@ const Home = props => {
             Have a blood pressure in range of 160/90 to 110/40.
           </p>
         </div>
+
         <div className="row my-2">
           <img
             className="mx-4"
@@ -85,7 +98,7 @@ const Home = props => {
             style={{ width: "100px", height: "100px" }}
           />
           <p className="h4 mt-5">
-            No disease that can be tranmitted by blood transfusion.
+            No disease that can be transmitted by blood transfusion.
           </p>
         </div>
       </div>

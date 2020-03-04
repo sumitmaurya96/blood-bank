@@ -22,7 +22,7 @@ const List = props => {
           <div className="rounded border border-dark row">
             <div className="p-4 col-md-6">
               <h1>
-                <span className="badge badge-danger">Your doners</span>
+                <span className="badge badge-danger">Your Donors</span>
               </h1>
               <div
                 className="list-group rounded border border-dark p-3 scroll-Y"
@@ -107,7 +107,7 @@ const List = props => {
 
             <div className="p-4 col-md-6">
               <h1>
-                <span className="badge badge-danger">You donating</span>
+                <span className="badge badge-danger">Your Donations</span>
               </h1>
               <div
                 className="list-group rounded border border-dark p-3"
@@ -119,70 +119,70 @@ const List = props => {
               >
                 <a
                   href="#"
-                  style={{ backgroundColor: "#c11758" }}
+                  style={{ backgroundColor: "#ff8080" }}
                   className="list-group-item list-group-item-action my-2 text-light"
                 >
                   Cras justo odio
                 </a>
                 <a
                   href="#"
-                  style={{ backgroundColor: "#c11758" }}
+                  style={{ backgroundColor: "#ff8080" }}
                   className="list-group-item list-group-item-action my-2 text-light"
                 >
                   Dapibus ac facilisis in
                 </a>
                 <a
                   href="#"
-                  style={{ backgroundColor: "#c11758" }}
+                  style={{ backgroundColor: "#ff8080" }}
                   className="list-group-item list-group-item-action my-2 text-light"
                 >
                   Cras justo odio
                 </a>
                 <a
                   href="#"
-                  style={{ backgroundColor: "#c11758" }}
+                  style={{ backgroundColor: "#ff8080" }}
                   className="list-group-item list-group-item-action my-2 text-light"
                 >
                   Dapibus ac facilisis in
                 </a>
                 <a
                   href="#"
-                  style={{ backgroundColor: "#c11758" }}
+                  style={{ backgroundColor: "#ff8080" }}
                   className="list-group-item list-group-item-action my-2 text-light"
                 >
                   Cras justo odio
                 </a>
                 <a
                   href="#"
-                  style={{ backgroundColor: "#c11758" }}
+                  style={{ backgroundColor: "#ff8080" }}
                   className="list-group-item list-group-item-action my-2 text-light"
                 >
                   Dapibus ac facilisis in
                 </a>
                 <a
                   href="#"
-                  style={{ backgroundColor: "#c11758" }}
+                  style={{ backgroundColor: "#ff8080" }}
                   className="list-group-item list-group-item-action my-2 text-light"
                 >
                   Cras justo odio
                 </a>
                 <a
                   href="#"
-                  style={{ backgroundColor: "#c11758" }}
+                  style={{ backgroundColor: "#ff8080" }}
                   className="list-group-item list-group-item-action my-2 text-light"
                 >
                   Dapibus ac facilisis in
                 </a>
                 <a
                   href="#"
-                  style={{ backgroundColor: "#c11758" }}
+                  style={{ backgroundColor: "#ff8080" }}
                   className="list-group-item list-group-item-action my-2 text-light"
                 >
                   Cras justo odio
                 </a>
                 <a
                   href="#"
-                  style={{ backgroundColor: "#c11758" }}
+                  style={{ backgroundColor: "#ff8080" }}
                   className="list-group-item list-group-item-action my-2 text-light"
                 >
                   Dapibus ac facilisis in

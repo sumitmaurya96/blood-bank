@@ -10,7 +10,7 @@ import Card from "react-bootstrap/Card";
 import Sumit from "../media/team/sumit.jpeg";
 import Aniket from "../media/team/aniket.jpeg";
 import Nishant from "../media/team/nishant.jpeg";
-import Amarnath from "../media/team/amarnath.jpeg";
+import Sourav from "../media/team/sourav.jpg";
 
 class About extends Component {
   render() {
@@ -22,10 +22,13 @@ class About extends Component {
           <Container>
             <Row>
               <Col>
-                <Card className="m-4 mx-auto" style={{ width: "15rem" }}>
+                <Card
+                  className="m-4 mx-auto"
+                  style={{ width: "15rem", backgroundColor: "#ff8080" }}
+                >
                   <Card.Img variant="top" src={Sumit} />
                   <Card.Body>
-                    <Card.Title className="text-muted text-center">
+                    <Card.Title className=" text-center">
                       Sumit Kumar
                     </Card.Title>
                     <Card.Text className="text-center">
@@ -47,10 +50,13 @@ class About extends Component {
               </Col>
 
               <Col>
-                <Card className="m-4 mx-auto" style={{ width: "15rem" }}>
+                <Card
+                  className="m-4 mx-auto"
+                  style={{ width: "15rem", backgroundColor: "#ff8080" }}
+                >
                   <Card.Img variant="top" src={Aniket} />
                   <Card.Body>
-                    <Card.Title className="text-muted text-center">
+                    <Card.Title className=" text-center">
                       Aniket Kumar
                     </Card.Title>
                     <Card.Text className="text-center">
@@ -72,11 +78,18 @@ class About extends Component {
               </Col>
 
               <Col>
-                <Card className="m-4 mx-auto" style={{ width: "15rem" }}>
-                  <Card.Img variant="top" src={Amarnath} />
+                <Card
+                  className="m-4 mx-auto"
+                  style={{ width: "15rem", backgroundColor: "#ff8080" }}
+                >
+                  <Card.Img
+                    variant="top"
+                    src={Sourav}
+                    style={{ height: "240px" }}
+                  />
                   <Card.Body>
-                    <Card.Title className="text-muted text-center">
-                      Amarnath Bhakt
+                    <Card.Title className=" text-center">
+                      Sourav Prasad
                     </Card.Title>
                     <Card.Text className="text-center">
                       <SocialIcon
@@ -97,10 +110,13 @@ class About extends Component {
               </Col>
 
               <Col>
-                <Card className="m-4 mx-auto" style={{ width: "15rem" }}>
+                <Card
+                  className="m-4 mx-auto"
+                  style={{ width: "15rem", backgroundColor: "#ff8080" }}
+                >
                   <Card.Img variant="top" src={Nishant} />
                   <Card.Body>
-                    <Card.Title className="text-muted text-center">
+                    <Card.Title className=" text-center">
                       Nishant Raj
                     </Card.Title>
                     <Card.Text className="text-center">

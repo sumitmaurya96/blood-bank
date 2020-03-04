@@ -9,6 +9,7 @@ import About from "./routes/about";
 import ContactUs from "./routes/contactUs";
 import Profile from "./routes/profile";
 import Request from "./routes/request";
+import Information from "./routes/information";
 //Algorithms
 import { UserContext } from "./user.context";
 import auth from "./algorithms/auth";
@@ -80,6 +81,15 @@ const App = props => {
               path="/signup"
               component={props => <SignUp {...props} onSubmit={handleSubmit} />}
             />
+
+            <Route
+              exact
+              path="/information"
+              component={props => (
+                <Information {...props} onSubmit={handleSubmit} />
+              )}
+            />
+
             <Route
               exact
               path="/login"
