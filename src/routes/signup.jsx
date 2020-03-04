@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/footer";
-
+//function start
 const SignUp = props => {
   const userData = {
     firstname: "",
