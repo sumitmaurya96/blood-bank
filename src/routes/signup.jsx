@@ -145,7 +145,10 @@ const SignUp = props => {
         </div>
 
         <div className="form-group">
-          <label>Last Blood Donation</label>
+          <label>
+            Last Blood Donation
+            <span className="h6 text-muted"> (optional)</span>
+          </label>
           <input
             type="date"
             className="form-control"

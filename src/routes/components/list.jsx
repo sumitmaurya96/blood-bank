@@ -22,7 +22,7 @@ const List = props => {
           <div className="rounded border border-dark row">
             <div className="p-4 col-md-6">
               <h1>
-                <span className="badge badge-danger">Your Donors</span>
+                <span className="h1 badge badge-danger">Your doners</span>
               </h1>
               <div
                 className="list-group rounded border border-dark p-3 scroll-Y"
@@ -32,76 +32,70 @@ const List = props => {
                   maxHeight: "65vh"
                 }}
               >
-                <a
-                  href="#"
-                  className="list-group-item list-group-item-action my-2"
-                  style={{ backgroundColor: "#ff8080" }}
+                <button
+                  className="btn btn-danger list-group-item my-2 p-2 text-light"
+                  style={{
+                    backgroundColor: "#ff8080"
+                  }}
                 >
-                  Cras justo odio
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2"
+                  <div className="col-md-5">
+                    <span className="h3 row">Aniket Kumar</span>
+                    <span className="h6 text-muted row offset-md-2">
+                      Ye bhadwagiri me ustad hai
+                    </span>
+                  </div>
+                  <h1 className="float-right mt-n5">
+                    <span className="badge badge-dark mb-4">28Km</span>
+                  </h1>
+                </button>
+                <button
+                  className="btn btn-danger list-group-item my-2 p-2 text-light"
+                  style={{
+                    backgroundColor: "#ff8080"
+                  }}
                 >
-                  Dapibus ac facilisis in
-                </a>
-                <a
-                  href="#"
-                  className="list-group-item list-group-item-action my-2"
-                  style={{ backgroundColor: "#ff8080" }}
+                  <div className="col-md-5">
+                    <span className="h3 row">Aniket Kumar</span>
+                    <span className="h6 text-muted row offset-md-2">
+                      Ye bhadwagiri me ustad hai
+                    </span>
+                  </div>
+                  <h1 className="float-right mt-n5">
+                    <span className="badge badge-dark mb-4">28Km</span>
+                  </h1>
+                </button>
+                <button
+                  className="btn btn-danger list-group-item my-2 p-2 text-light"
+                  style={{
+                    backgroundColor: "#ff8080"
+                  }}
                 >
-                  Cras justo odio
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2"
+                  <div className="col-md-5">
+                    <span className="h3 row">Aniket Kumar</span>
+                    <span className="h6 text-muted row offset-md-2">
+                      Ye bhadwagiri me ustad hai
+                    </span>
+                  </div>
+                  <h1 className="float-right mt-n5">
+                    <span className="badge badge-dark mb-4">28Km</span>
+                  </h1>
+                </button>
+                <button
+                  className="btn btn-danger list-group-item my-2 p-2 text-light"
+                  style={{
+                    backgroundColor: "#ff8080"
+                  }}
                 >
-                  Dapibus ac facilisis in
-                </a>
-                <a
-                  href="#"
-                  className="list-group-item list-group-item-action my-2"
-                  style={{ backgroundColor: "#ff8080" }}
-                >
-                  Cras justo odio
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2"
-                >
-                  Dapibus ac facilisis in
-                </a>
-                <a
-                  href="#"
-                  className="list-group-item list-group-item-action my-2"
-                  style={{ backgroundColor: "#ff8080" }}
-                >
-                  Cras justo odio
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2"
-                >
-                  Dapibus ac facilisis in
-                </a>
-                <a
-                  href="#"
-                  className="list-group-item list-group-item-action my-2"
-                  style={{ backgroundColor: "#ff8080" }}
-                >
-                  Cras justo odio
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2"
-                >
-                  Dapibus ac facilisis in
-                </a>
+                  <div className="col-md-5">
+                    <span className="h3 row">Aniket Kumar</span>
+                    <span className="h6 text-muted row offset-md-2">
+                      Ye bhadwagiri me ustad hai
+                    </span>
+                  </div>
+                  <h1 className="float-right mt-n5">
+                    <span className="badge badge-dark mb-4">28Km</span>
+                  </h1>
+                </button>
               </div>
             </div>
 
@@ -117,76 +111,86 @@ const List = props => {
                   maxHeight: "65vh"
                 }}
               >
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2 text-light"
+                <button
+                  className="btn btn-danger list-group-item my-2 p-2 text-light"
+                  style={{
+                    backgroundColor: "#c11758"
+                  }}
                 >
-                  Cras justo odio
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2 text-light"
+                  <div className="col-md-5">
+                    <span className="h3 row">Aniket Kumar</span>
+                    <span className="h6 text-warning row offset-md-2">
+                      Ye bhadwagiri me ustad hai
+                    </span>
+                  </div>
+                  <h1 className="float-right mt-n5">
+                    <span className="badge badge-dark mb-4">28Km</span>
+                  </h1>
+                </button>
+                <button
+                  className="btn btn-danger list-group-item my-2 p-2 text-light"
+                  style={{
+                    backgroundColor: "#c11758"
+                  }}
                 >
-                  Dapibus ac facilisis in
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2 text-light"
+                  <div className="col-md-5">
+                    <span className="h3 row">Aniket Kumar</span>
+                    <span className="h6 text-warning row offset-md-2">
+                      Ye bhadwagiri me ustad hai
+                    </span>
+                  </div>
+                  <h1 className="float-right mt-n5">
+                    <span className="badge badge-dark mb-4">28Km</span>
+                  </h1>
+                </button>
+                <button
+                  className="btn btn-danger list-group-item my-2 p-2 text-light"
+                  style={{
+                    backgroundColor: "#c11758"
+                  }}
                 >
-                  Cras justo odio
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2 text-light"
+                  <div className="col-md-5">
+                    <span className="h3 row">Aniket Kumar</span>
+                    <span className="h6 text-warning row offset-md-2">
+                      Ye bhadwagiri me ustad hai
+                    </span>
+                  </div>
+                  <h1 className="float-right mt-n5">
+                    <span className="badge badge-dark mb-4">28Km</span>
+                  </h1>
+                </button>
+                <button
+                  className="btn btn-danger list-group-item my-2 p-2 text-light"
+                  style={{
+                    backgroundColor: "#c11758"
+                  }}
                 >
-                  Dapibus ac facilisis in
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2 text-light"
+                  <div className="col-md-5">
+                    <span className="h3 row">Aniket Kumar</span>
+                    <span className="h6 text-warning row offset-md-2">
+                      Ye bhadwagiri me ustad hai
+                    </span>
+                  </div>
+                  <h1 className="float-right mt-n5">
+                    <span className="badge badge-dark mb-4">28Km</span>
+                  </h1>
+                </button>
+                <button
+                  className="btn btn-danger list-group-item my-2 p-2 text-light"
+                  style={{
+                    backgroundColor: "#c11758"
+                  }}
                 >
-                  Cras justo odio
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2 text-light"
-                >
-                  Dapibus ac facilisis in
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2 text-light"
-                >
-                  Cras justo odio
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2 text-light"
-                >
-                  Dapibus ac facilisis in
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2 text-light"
-                >
-                  Cras justo odio
-                </a>
-                <a
-                  href="#"
-                  style={{ backgroundColor: "#ff8080" }}
-                  className="list-group-item list-group-item-action my-2 text-light"
-                >
-                  Dapibus ac facilisis in
-                </a>
+                  <div className="col-md-5">
+                    <span className="h3 row">Aniket Kumar</span>
+                    <span className="h6 text-warning row offset-md-2">
+                      Ye bhadwagiri me ustad hai
+                    </span>
+                  </div>
+                  <h1 className="float-right mt-n5">
+                    <span className="badge badge-dark mb-4">28Km</span>
+                  </h1>
+                </button>
               </div>
             </div>
           </div>
