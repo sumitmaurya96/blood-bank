@@ -2,13 +2,18 @@ import React from "react";
 import Navbar from "./components/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/footer";
-//function start
+
 const SignUp = props => {
   const userData = {
     firstname: "",
     lastname: "",
     username: "",
-    password: ""
+    password: "",
+    confirmpassword: "",
+    bloodgroup: "",
+    birthdate: "",
+    sex: "",
+    lastblooddonation: ""
   };
 
   const saveData = (event, type) => {
@@ -24,15 +29,30 @@ const SignUp = props => {
     if (type === "password") {
       userData.password = event.target.value;
     }
+    if (type === "bloodgroup") {
+      userData.bloodgroup = event.target.value;
+    }
+    if (type === "birthdate") {
+      userData.birthdate = event.target.value;
+    }
+    if (type === "sex") {
+      userData.sex = event.target.value;
+    }
+    if (type === "lastblooddonation") {
+      userData.lastblooddonation = event.target.value;
+    }
+    if (type === "confirmpassword") {
+      userData.confirmpassword = event.target.value;
+    }
   };
 
   return (
     <React.Fragment>
       <Navbar {...props} />
       <form
+        className="m-3 mx-auto"
         style={{
-          margin: "50px auto",
-          width: "30%"
+          width: "40%"
         }}
       >
         <h3>Sign Up</h3>
@@ -83,6 +103,94 @@ const SignUp = props => {
               saveData(event, "password");
             }}
           />
+        </div>
+
+        <div className="form-group">
+          <label>Confirm Password</label>
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Enter password again"
+            onChange={event => {
+              saveData(event, "confirmpassword");
+            }}
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Blood Group</label>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Blood Group"
+            onChange={event => {
+              saveData(event, "bloodgroup");
+            }}
+          />
+        </div>
+
+        <div className="form-group">
+          <label>D.O.B.(Date of birth)</label>
+          <input
+            type="date"
+            className="form-control"
+            placeholder="D.O.B."
+            onChange={event => {
+              saveData(event, "birthdate");
+            }}
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Last Blood Donation</label>
+          <input
+            type="date"
+            className="form-control"
+            placeholder="Last Blood Donation"
+            onChange={event => {
+              saveData(event, "lastblooddonation");
+            }}
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Sex</label>
+          <br />
+          <input
+            type="radio"
+            name="sex"
+            onChange={event => {
+              saveData(event, "sex");
+            }}
+            value="male"
+          />
+          <label style={{ paddingLeft: "3px", paddingRight: "50px" }}>
+            Male
+          </label>
+
+          <input
+            type="radio"
+            name="sex"
+            onChange={event => {
+              saveData(event, "sex");
+            }}
+            value="female"
+          />
+          <label style={{ paddingLeft: "3px", paddingRight: "50px" }}>
+            Female
+          </label>
+
+          <input
+            type="radio"
+            name="sex"
+            onChange={event => {
+              saveData(event, "sex");
+            }}
+            value="others"
+          />
+          <label style={{ paddingLeft: "3px", paddingRight: "50px" }}>
+            Others
+          </label>
         </div>
 
         <button

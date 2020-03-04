@@ -41,7 +41,10 @@ const Login = props => {
     <React.Fragment>
       <Navbar {...props} />
 
-      <form style={{ margin: "90px auto", width: "30%" }}>
+      <form
+        className="mx-auto"
+        style={{ marginTop: "85px", marginBottom: "120px ", width: "30%" }}
+      >
         <h3>Log In</h3>
 
         <div className="form-group">
