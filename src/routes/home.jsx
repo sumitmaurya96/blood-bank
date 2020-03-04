@@ -57,50 +57,50 @@ const Home = props => {
         <div className="row m-2">
           <p className="text-danger h4 ">Who can give blood?</p>
         </div>
-        <div className="row my-2">
-          <img
-            className="mx-4"
-            src={threeGenerations}
-            alt="family"
-            style={{ width: "100px", height: "100px" }}
-          />
-          <p className="h4 mt-5">Must be within the age group of 18-60.</p>
-        </div>
+        <div className="col">
+          <div className="row my-2">
+            <img
+              className="mx-4"
+              src={threeGenerations}
+              alt="family"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p className="h4 mt-5">Must be within the age group of 18-60.</p>
+          </div>
+          <div className="row my-2">
+            <img
+              className="mx-4"
+              src={bloodPressure}
+              alt="family"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p className="h4 mt-5">
+              Have a blood pressure in range of 160/90 to 110/40.
+            </p>
+          </div>
 
+          <div className="row my-2">
+            <img
+              className="mx-4"
+              src={bloodDisease}
+              alt="family"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p className="h4 mt-5">
+              No disease that can be transmitted by blood transfusion.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="row p-4" style={{ backgroundColor: "#ffb3b3" }}>
         <button
-          className="btn-danger btn-lg"
+          className="float-right btn-danger btn-lg mx-auto"
           style={{
-            borderRadius: "4px",
-            float: "right",
-            marginRight: "350px"
+            borderRadius: "4px"
           }}
         >
           Know more
         </button>
-
-        <div className="row my-2">
-          <img
-            className="mx-4"
-            src={bloodPressure}
-            alt="family"
-            style={{ width: "100px", height: "100px" }}
-          />
-          <p className="h4 mt-5">
-            Have a blood pressure in range of 160/90 to 110/40.
-          </p>
-        </div>
-
-        <div className="row my-2">
-          <img
-            className="mx-4"
-            src={bloodDisease}
-            alt="family"
-            style={{ width: "100px", height: "100px" }}
-          />
-          <p className="h4 mt-5">
-            No disease that can be transmitted by blood transfusion.
-          </p>
-        </div>
       </div>
 
       <Footer />
