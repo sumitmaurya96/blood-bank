@@ -92,8 +92,14 @@ const Home = props => {
           </div>
         </div>
       </div>
-      <div className="row p-4" style={{ backgroundColor: "#ffb3b3" }}>
+      <div
+        className="row p-4"
+        style={{ backgroundColor: "#ffb3b3", margin: "0px" }}
+      >
         <button
+          onClick={() => {
+            props.history.push("/information");
+          }}
           className="float-right btn-danger btn-lg mx-auto"
           style={{
             borderRadius: "4px"
