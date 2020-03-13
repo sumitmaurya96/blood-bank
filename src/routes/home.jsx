@@ -38,7 +38,7 @@ const Home = props => {
         <div className="col-md-4 mt-1">
           <p className="text-white h1 text-light">BLOOD BANK</p>
           <p className="text-muted offset-md-1" style={{ fontSize: "20px" }}>
-            Every blood donar is a life saver
+            Every blood donor is a life saver
           </p>
         </div>
         <div className="mt-3 offset-md-5">
