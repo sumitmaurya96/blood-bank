@@ -4,13 +4,7 @@ import Popup from "reactjs-popup";
 const RequestPopup = props => (
   <Popup
     trigger={
-      <button
-        className="btn-lg m-2"
-        style={{
-          backgroundColor: "#ff8080",
-          border: "3px solid #f7e6e6"
-        }}
-      >
+      <button className="btn-danger btn-lg m-2" style={{ borderRadius: "8px" }}>
         REQUEST NOW
       </button>
     }

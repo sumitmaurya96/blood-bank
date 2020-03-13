@@ -62,10 +62,9 @@ class Contact extends Component {
               </Form.Group>
 
               <button
-                className="btn btn-lg mx-auto my-2"
+                className="btn-danger btn-lg mx-auto my-2"
                 style={{
-                  backgroundColor: "#ff8080",
-                  border: "3px solid #f7e6e6"
+                  borderRadius: "6px"
                 }}
               >
                 Send
